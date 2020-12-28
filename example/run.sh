@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# this loads the program to $0500
-# so start it on the C65 with SYS 1280
-# or via serial monitor with g500
+# this loads the program to $2001
+# and runs the BASIC loader that is embedded
+# at the start
 
-m65 -l /dev/ttyUSB1 -1 ./example.prg
+m65 -l /dev/ttyUSB1 -1 -r ./example.prg
 
